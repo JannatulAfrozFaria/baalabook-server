@@ -6,3 +6,11 @@ const port = process.env.PORT || 5000;
 //middleware
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+})
+
+app.listen-(port,()=>{
+console.log(`baalabook server is running on port ${port}`)
+})
